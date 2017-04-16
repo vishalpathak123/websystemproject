@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+    background-color: #C1E1A6;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 500;
+    overflow: hidden;
+    background-color: grey;
+    font-family: courier;
+    font-size: 2em;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.edit
+{
+    margin-top: 18px;
+    padding: 50px 175px;
+    //padding: 2% 2% 2% 2%;
+    //border:1px solid black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35px;
+    color:white;
+}
+
+h1{color:white;}
+.text-muted
+{
+    color: #777777;
+}
+.bg-light-gray {
+  background-color: #eeeeee;
+}
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+.team-member {
+ display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+.row{
+    display:inline-block;
+}
+</style>
+</head>
+<body>
+<ul>
+    <img style="height:50px;width:50px;margin-top:8px" src="srm.png">
+<li><a href="#team">Team</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">User</a>
+    <div class="dropdown-content">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+  </li>
+  <li><a href="#home">About</a></li>
+</ul>
+<h2 id="home" class="edit"> "Welcome to SRM IT Department Virtual Tour Project.This website will help you to have an overall look into how the structure of the IT Department Labs looks like and the in's and out's of it.Operate with the mouse to have a 360* VIRTUAL Tour of the mapped area and have a better expirience of what its like to virtually be here with physically being where you are.This wesite will help you navigate into the individual labs of IT Department and provide you with an encriching experience about the amenties provided by the department. Tap on to the User button to signup or else login directly if you have signed up already Enjoy!"
+</h2> 
+<section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="pathak">
+                <div class="col-lg-12 text-center">
+                <center>
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                </center>
+                </div>
+            </div>
+            <center>
+				<div class="row">            
+                    <div class="team-member">
+                        <img src="vp1.jpg" class="img-responsive img-circle" alt="" style="height: 250px;width: 200px; border-radius: 50%;">
+                        <a href="https://www.facebook.com/vishal.pathak.73997"><h4>Vishal Kumar</h4></a>
+                        <!--<h4>Vishal Kumar</h4>-->
+                        <p class="text-muted">Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="subh.jpg" class="img-responsive img-circle" alt="" style="height: 250px;width: 200px;border-radius: 50%;margin-left: 200px;">
+                        <a href="https://www.facebook.com/subhro.chatterjee.9"><h4 style="margin-left: 200px;">Subhro Chatterjee</h4></a>
+                        <!--<h4 style="margin-left: 200px;">Subhro Chatterjee</h4>-->
+                        <p style="margin-left:200px;" class="text-muted">Lead Developer</p>                        
+                    </div>                
+				</div>
+            </center>
+        </div>
+</section>     
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype.html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script language="javascript">
+		function validateForm() 
+		{
+    		var x = document.forms.username.value;
+    		if (x == "") 
+    		{
+        		alert("Username can't be empty..");
+        		return false;
+    		}
+    		return true;
+		}
+		</script>
+	</head>
+<CENTER>	
+<body>
+	<center>
+		<header class="main-header" role="banner">
+  		<img src="logo.png" alt="Banner Image" width=400px>
+	</center>
+	<CENTER>
+		<div id="Sign-In">
+			<fieldset style="width:30%"><legend>LogIn Form</legend>
+				<form name="forms" action="login.php" onsubmit="return validateForm();" method="POST">
+					<table border="0">
+						<tr>
+							<td>Userame :</td><td> <input type="text" name="username"></td>
+						</tr>
+						<tr>
+							<td>Password :</td><td> <input type="password" name="password"></td>
+						</tr>
+					</table>
+					<input type="submit" class="button" value=LogIn>
+					<input type="button" class="button" onclick="location.href='signup.html';" value=SignUp></p>
+					<!--<p style="color:black">
+					<input type="checkbox" name="autologin">Remember Me</p>-->
+				</form>
+			</fieldset>
+		</div>
+	</CENTER>
+</body>
+</CENTER>
+</html>

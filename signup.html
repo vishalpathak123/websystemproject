@@ -1,0 +1,52 @@
+<doctype!html>
+<html>
+	<head>
+		<link rel="stylesheet" href="button.css">
+    <script language="javascript">
+      function pwdcheck()
+      {
+		if(document.Form.pass.value!=document.Form.cpass.value)
+        {
+          alert("Password doesn't match");
+          return false;
+        }
+        return true;
+
+		}
+		
+    </script>
+	</head>
+	<body>
+		<title> NEW REGISTRATION </title>
+		<center>
+		<header class="main-header" role="banner">
+		<img src="logo.png" alt="Banner Image" width=350px>
+		</center>
+		<center>
+			<div id="Sign-Up">
+				<fieldset style="width:30%"><legend>Registration Form</legend>
+				<form  name="Form" action="signup.php" onsubmit="return pwdcheck();" method="POST">
+					<table border="0">
+						<tr>
+							<td>Name :</td><td> <input type="text" name="name" required=""></td>
+						</tr>
+						<tr>
+							<td>Email :</td><td> <input type="text" name="email" required=""></td>
+						</tr>
+						<tr>
+							<td>UserName :</td><td> <input type="text" name="user" required=""></td>
+						</tr>
+						<tr>
+							<td>Password :</td><td> <input type="password" name="pass" required=""></td>
+						</tr>
+						<tr>
+							<td>Confirm Password :</td><td><input type="password" name="cpass" required=""></td>
+						</tr>
+					</table>
+					<input type="submit" class="button" name="Submit" value="Sign-Up">
+				</form>
+				</fieldset>
+			</div>
+		</center>	
+	</body>
+<html>
